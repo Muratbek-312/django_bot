@@ -5,4 +5,4 @@ from .models import Stadup
 class StadupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stadup
-        fields = ('id', 'user_name', 'done', 'todo', 'problems', 'publication')
+        fields = ('id', 'group', 'user_name', 'done', 'todo', 'problems', 'publication')

@@ -6,9 +6,9 @@ from .models import Stadup
 
 
 class AuthorAdmin(ImportExportModelAdmin):
-    list_display = ('id', 'user_name', 'done', 'todo', 'problems', 'publication')
-    list_display_links = ('id', 'user_name', 'done', 'todo', 'problems', 'publication')
-    list_filter = ['publication', ]
+    list_display = ('id', 'group', 'user_name', 'done', 'todo', 'problems', 'publication')
+    list_display_links = ('id', 'group', 'user_name', 'done', 'todo', 'problems', 'publication')
+    list_filter = ['publication', 'group',]
     search_fields = ['user_name', ]
 
 
